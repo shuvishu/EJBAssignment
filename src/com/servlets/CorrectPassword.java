@@ -40,19 +40,11 @@ public class CorrectPassword extends HttpServlet {
 		response.setContentType("text/html");
 		
 		PrintWriter pw=response.getWriter();
+		String n=(String) request.getAttribute("firstName");
 		pw.println("<html>");
 		pw.println("<title>first page</title>");
 		pw.println("<body>");
-		
-		
-		Cookie [] carr=request.getCookies();
-		
-		for(Cookie c:carr)
-		{
-			pw.println("<h3>hello "+c.getValue()+"</h3>");
-		}
-		
-		
+		pw.println("hello "+n);
 		pw.println("</body>");
 		pw.println("</html>");
 	

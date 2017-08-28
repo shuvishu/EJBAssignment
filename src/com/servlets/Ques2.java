@@ -44,6 +44,7 @@ public class Ques2 extends HttpServlet {
 		pw.println("<h3>hello"+" "+name+"</h3>");
 		pw.println("</body>");
 		pw.println("</html>");
+		
 	}
 
 }

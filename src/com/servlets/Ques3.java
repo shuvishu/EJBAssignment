@@ -43,8 +43,7 @@ public class Ques3 extends HttpServlet {
 		if(fname.equals("shubham")&&lname.equals("verma"))
 		{
 			RequestDispatcher rd=request.getRequestDispatcher("CorrectPassword");
-			Cookie c=new Cookie("firstName", fname);
-			response.addCookie(c);
+			request.setAttribute("firstName", fname);
 			rd.forward(request, response);
 		}
 		else{
